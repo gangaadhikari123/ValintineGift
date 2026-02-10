@@ -14,12 +14,12 @@ function showDay(day) {
     rose: {
       title: "🌹 Happy Rose Day 🌹",
       text: "A rose for my love, to show how deep my feelings grow.",
-      img: "https://i.imgur.com/LZ8FJxG.png"
+     
     },
     chocolate: {
       title: "🍫 Happy Chocolate Day 🍫",
       text: "Life is like chocolate – sweet and full of surprises!",
-      img: "https://i.imgur.com/yoEzbt6.png"
+      
     },
     hug: {
       title: "🤗 Happy Hug Day 🤗",
@@ -38,8 +38,7 @@ function showDay(day) {
   let html = `<h1>${data[day].title}</h1>
               <p class="quote">${data[day].text}</p>`;
 
-  if (data[day].img) {
-    html += `<img src="${data[day].img}" class="img">`;
+  
   }
 
   content.innerHTML = html;
